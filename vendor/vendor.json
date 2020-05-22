@@ -1,6 +1,31 @@
 {
 	"comment": "",
 	"ignore": "test",
-	"package": [],
+	"package": [
+		{
+			"checksumSHA1": "eWFMZariUzKvtg9o1cZGQfLtumU=",
+			"path": "github.com/sirupsen/logrus",
+			"revision": "20dcf9105151597fd13878abed4d58e49010a00f",
+			"revisionTime": "2020-05-19T15:10:51Z"
+		},
+		{
+			"checksumSHA1": "Ld0iviZSRGAKK6WSoti+3++1RmY=",
+			"path": "golang.org/x/sys/internal/unsafeheader",
+			"revision": "fe76b779f299728f3bd63f77ea2c815504229c3b",
+			"revisionTime": "2020-05-18T12:52:01Z"
+		},
+		{
+			"checksumSHA1": "2aZC0XgksQiRCoxKIl+4Nc/4Vks=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "fe76b779f299728f3bd63f77ea2c815504229c3b",
+			"revisionTime": "2020-05-18T12:52:01Z"
+		},
+		{
+			"checksumSHA1": "bpB1nkNgskefo989zkuJXfEQHiY=",
+			"path": "golang.org/x/sys/windows",
+			"revision": "fe76b779f299728f3bd63f77ea2c815504229c3b",
+			"revisionTime": "2020-05-18T12:52:01Z"
+		}
+	],
 	"rootPath": "engine-faiss-search"
 }

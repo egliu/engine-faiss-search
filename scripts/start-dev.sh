@@ -10,6 +10,7 @@ code_root=/go/src/engine-faiss-search
 
 docker run -d --name=efs \
   --network=host \
+  -e TZ=Asia/Shanghai \
   -v ${PWD}:${code_root} \
   -w ${code_root} \
   ${baseImage} bash -c "while true; do sleep 1000; done"
