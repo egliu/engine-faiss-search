@@ -13,6 +13,8 @@ LDFLAGS += -X "$(project)/version.GitHash=$(shell git rev-parse HEAD)"
 LDFLAGS += -X "$(project)/version.Version=$(VERSION)"
 LDFLAGS += -X "$(project)/version.GitBranch=$(shell git rev-parse --abbrev-ref HEAD)"
 
+baseImage=golang:1.12.17
+
 build: $(TARGETS)
 
 $(TARGETS): $(SRC)
@@ -20,3 +22,6 @@ $(TARGETS): $(SRC)
 
 clean:
 	rm -f $(TARGETS)
+
+dev:
+	@baseImage=${baseImage} bash scripts/start-dev.sh
