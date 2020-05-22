@@ -3,6 +3,12 @@
 	"ignore": "test",
 	"package": [
 		{
+			"checksumSHA1": "Vdjr+0mTbBmbiKNC+T0n4IrnF6M=",
+			"path": "github.com/samuel/go-zookeeper/zk",
+			"revision": "2cc03de413da42869e2db7ce7965d3e978d917eb",
+			"revisionTime": "2019-09-23T20:27:52Z"
+		},
+		{
 			"checksumSHA1": "eWFMZariUzKvtg9o1cZGQfLtumU=",
 			"path": "github.com/sirupsen/logrus",
 			"revision": "20dcf9105151597fd13878abed4d58e49010a00f",
