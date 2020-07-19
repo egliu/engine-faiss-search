@@ -2,3 +2,4 @@
 
 ## Dependencies
 * govendor
+* prototool 1.10.0

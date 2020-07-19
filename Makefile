@@ -6,7 +6,7 @@ VERSION := v2.2.0
 BUILD := `git rev-parse --short=7 HEAD`
 TARGETS := engine-faiss-search-master
 ALL_TARGETS := $(TARGETS)
-project=engine-faiss-search
+project=github.com/engine-faiss-search
 
 LDFLAGS += -X "$(project)/version.BuildTS=$(shell date -u '+%Y-%m-%d %I:%M:%S')"
 LDFLAGS += -X "$(project)/version.GitHash=$(shell git rev-parse HEAD)"

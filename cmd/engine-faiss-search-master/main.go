@@ -1,9 +1,10 @@
 package main
 
 import (
-	"engine-faiss-search/version"
 	"flag"
-	"fmt"
+	"os"
+
+	"github.com/engine-faiss-search/version"
 
 	log "github.com/sirupsen/logrus"
 )
@@ -23,9 +24,10 @@ func main() {
 		version.PrintFullVersionInfo()
 		return
 	}
-	fmt.Println("engine-faiss-search-manager")
 
 	if *verbose {
-		log.SetLevel(log.DebugLevel)
+		log.SetLevel(log.DebugLevel) // 默认是 InfoLevel
 	}
+	log.SetOutput(os.Stdout)
+	log.Info("hello logrus")
 }
